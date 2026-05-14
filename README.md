@@ -148,11 +148,3 @@ Warm-start models are evaluated using:
 - Coverage to measure how much of the catalog appears in recommendations
 
 Cold-start models are evaluated only on held-out cold items, where their collaborative ratings are removed during training and then used only for evaluation.
-
-## GitHub submission note
-
-After creating a GitHub repository, push this folder and submit a link like:
-
-```text
-https://github.com/YOUR_USERNAME/cinematch-hybrid-recommender-python
-```
