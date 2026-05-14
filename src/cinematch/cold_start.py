@@ -118,7 +118,7 @@ class MetadataLatentMapper:
 
     def predict_item_bias(self, item: int) -> float:
         X = feature_matrix(self.dataset, [item], self.vocabulary)
-        return float(X @ self.bias_weights)
+        return float((X @ self.bias_weights).reshape(-1)[0])
 
     def score(self, user: int, item: int, dataset: Dataset | None = None) -> float:
         item_vector = self.predict_item_vector(item).reshape(-1)

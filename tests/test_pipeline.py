@@ -1,6 +1,7 @@
 from pathlib import Path
 
 from cinematch.data import load_dataset
+from cinematch.cold_start import MetadataLatentMapper, create_cold_start_split, evaluate_cold_ranking
 from cinematch.evaluation import evaluate_model
 from cinematch.models import MatrixFactorizationModel, PopularityModel
 from cinematch.recommender import parse_seed_ratings, recommend_for_new_user
@@ -32,3 +33,16 @@ def test_demo_recommendations_are_generated():
     recs = recommend_for_new_user(mf, dataset, seeds, n=3)
     assert len(recs) == 3
     assert all("title" in rec for rec in recs)
+
+
+def test_metadata_mapper_scores_cold_items():
+    dataset = load_dataset(Path("data/sample"), seed=7)
+    split = create_cold_start_split(dataset, count=3, min_ratings=4, seed=7)
+    warm_mf = MatrixFactorizationModel(factors=6, epochs=2, seed=7).fit(split.warm_dataset, split.warm_dataset.test)
+    warm_items = set(split.warm_dataset.train["item"].unique().astype(int))
+    mapper = MetadataLatentMapper(vocab_limit=20).fit(split.warm_dataset, warm_mf, warm_items=warm_items)
+
+    result = evaluate_cold_ranking(mapper, dataset, split.cold_items, split.cold_ratings, k=5)
+
+    assert result["users_evaluated"] >= 0
+    assert 0.0 <= result["coverage"] <= 1.0
