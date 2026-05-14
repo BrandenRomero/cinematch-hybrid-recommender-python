@@ -1,0 +1,233 @@
+{
+  "seed_ratings": [
+    {
+      "item": 0,
+      "item_id": 1,
+      "title": "Toy Story (1995)",
+      "rating": 5.0
+    },
+    {
+      "item": 1,
+      "item_id": 2,
+      "title": "Twelve Monkeys (1995)",
+      "rating": 5.0
+    },
+    {
+      "item": 2,
+      "item_id": 3,
+      "title": "Star Wars (1977)",
+      "rating": 5.0
+    },
+    {
+      "item": 3,
+      "item_id": 4,
+      "title": "Fargo (1996)",
+      "rating": 5.0
+    },
+    {
+      "item": 4,
+      "item_id": 5,
+      "title": "Contact (1997)",
+      "rating": 4.0
+    }
+  ],
+  "recommendations": [
+    {
+      "rank": 1,
+      "item": 9,
+      "item_id": 10,
+      "title": "The Wrong Trousers (1993)",
+      "predicted_rating": 4.96,
+      "genres": [
+        "Animation",
+        "Comedy"
+      ],
+      "explanation": {
+        "shared_genres_with_liked_movies": [
+          "Animation",
+          "Comedy"
+        ],
+        "nearest_seed_movie": "Star Wars (1977)",
+        "latent_similarity_to_seed": 0.535
+      }
+    },
+    {
+      "rank": 2,
+      "item": 5,
+      "item_id": 6,
+      "title": "Schindler's List (1993)",
+      "predicted_rating": 4.958,
+      "genres": [
+        "Drama",
+        "War"
+      ],
+      "explanation": {
+        "shared_genres_with_liked_movies": [
+          "Drama",
+          "War"
+        ],
+        "nearest_seed_movie": "Star Wars (1977)",
+        "latent_similarity_to_seed": 0.256
+      }
+    },
+    {
+      "rank": 3,
+      "item": 18,
+      "item_id": 19,
+      "title": "Back to the Future (1985)",
+      "predicted_rating": 4.941,
+      "genres": [
+        "Adventure",
+        "Comedy",
+        "Sci-Fi"
+      ],
+      "explanation": {
+        "shared_genres_with_liked_movies": [
+          "Adventure",
+          "Comedy",
+          "Sci-Fi"
+        ],
+        "nearest_seed_movie": "Contact (1997)",
+        "latent_similarity_to_seed": 0.344
+      }
+    },
+    {
+      "rank": 4,
+      "item": 17,
+      "item_id": 18,
+      "title": "Good Will Hunting (1997)",
+      "predicted_rating": 4.899,
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "explanation": {
+        "shared_genres_with_liked_movies": [
+          "Drama"
+        ],
+        "nearest_seed_movie": "Fargo (1996)",
+        "latent_similarity_to_seed": 0.504
+      }
+    },
+    {
+      "rank": 5,
+      "item": 16,
+      "item_id": 17,
+      "title": "Apollo 13 (1995)",
+      "predicted_rating": 4.87,
+      "genres": [
+        "Action",
+        "Drama",
+        "Thriller"
+      ],
+      "explanation": {
+        "shared_genres_with_liked_movies": [
+          "Action",
+          "Drama",
+          "Thriller"
+        ],
+        "nearest_seed_movie": "Fargo (1996)",
+        "latent_similarity_to_seed": 0.603
+      }
+    },
+    {
+      "rank": 6,
+      "item": 8,
+      "item_id": 9,
+      "title": "A Close Shave (1995)",
+      "predicted_rating": 4.844,
+      "genres": [
+        "Animation",
+        "Comedy"
+      ],
+      "explanation": {
+        "shared_genres_with_liked_movies": [
+          "Animation",
+          "Comedy"
+        ],
+        "nearest_seed_movie": "Fargo (1996)",
+        "latent_similarity_to_seed": 0.528
+      }
+    },
+    {
+      "rank": 7,
+      "item": 19,
+      "item_id": 20,
+      "title": "Monty Python and the Holy Grail (1975)",
+      "predicted_rating": 4.829,
+      "genres": [
+        "Adventure",
+        "Comedy",
+        "Fantasy"
+      ],
+      "explanation": {
+        "shared_genres_with_liked_movies": [
+          "Adventure",
+          "Comedy"
+        ],
+        "nearest_seed_movie": "Toy Story (1995)",
+        "latent_similarity_to_seed": 0.612
+      }
+    },
+    {
+      "rank": 8,
+      "item": 7,
+      "item_id": 8,
+      "title": "Casablanca (1942)",
+      "predicted_rating": 4.798,
+      "genres": [
+        "Drama",
+        "Romance",
+        "War"
+      ],
+      "explanation": {
+        "shared_genres_with_liked_movies": [
+          "Drama",
+          "War"
+        ],
+        "nearest_seed_movie": "Fargo (1996)",
+        "latent_similarity_to_seed": 0.628
+      }
+    },
+    {
+      "rank": 9,
+      "item": 12,
+      "item_id": 13,
+      "title": "Raiders of the Lost Ark (1981)",
+      "predicted_rating": 4.725,
+      "genres": [
+        "Action",
+        "Adventure"
+      ],
+      "explanation": {
+        "shared_genres_with_liked_movies": [
+          "Action",
+          "Adventure"
+        ],
+        "nearest_seed_movie": "Star Wars (1977)",
+        "latent_similarity_to_seed": 0.036
+      }
+    },
+    {
+      "rank": 10,
+      "item": 13,
+      "item_id": 14,
+      "title": "Terminator 2: Judgment Day (1991)",
+      "predicted_rating": 4.723,
+      "genres": [
+        "Action",
+        "Sci-Fi",
+        "War"
+      ],
+      "explanation": {
+        "shared_genres_with_liked_movies": [
+          "Action",
+          "Sci-Fi",
+          "War"
+        ],
+        "nearest_seed_movie": "Toy Story (1995)",
+        "latent_similarity_to_seed": 0.337
+      }
+    }
+  ]
+}

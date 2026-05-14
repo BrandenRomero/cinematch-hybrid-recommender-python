@@ -1,0 +1,7 @@
+{
+  "users": 10,
+  "items": 20,
+  "train_ratings": 81,
+  "test_ratings": 20,
+  "density": 0.505
+}

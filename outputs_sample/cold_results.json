@@ -1,0 +1,18 @@
+[
+  {
+    "model": "Cold genre profile",
+    "P@10": 0.2222222222222222,
+    "R@10": 1.0,
+    "NDCG@10": 0.9110266270785247,
+    "coverage": 1.0,
+    "users_evaluated": 9
+  },
+  {
+    "model": "Metadata latent mapper",
+    "P@10": 0.2222222222222222,
+    "R@10": 1.0,
+    "NDCG@10": 0.7065645772697556,
+    "coverage": 1.0,
+    "users_evaluated": 9
+  }
+]
